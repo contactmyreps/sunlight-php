@@ -1,18 +1,18 @@
 {
-    "name": ":vendor/:package_name",
+    "name": "contactmyreps/sunlight-php",
     "type": "library",
-    "description": ":package_description",
+    "description": "A PHP wrapper for Sunlight Foundation's API",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "contactmyreps",
+        "sunlight-php"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/contactmyreps/sunlight-php",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "name": "Ed Fialkowski",
+            "email": "edfialk@gmail.com",
+            "homepage": "http://edfialk.com",
             "role": "Developer"
         }
     ],
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            ":vendor\\:package_name\\": "src"
+            "edfialk\\sunlight-php\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor\\:package_name\\": "tests"
+            "edfialk\\sunlight-php\\": "tests"
         }
     },
     "scripts": {
