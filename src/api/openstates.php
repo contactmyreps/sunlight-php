@@ -83,7 +83,7 @@ class OpenStates extends BaseAPI
         $url = 'legislators/?';
         if (count($search) > 0) {
             $p = [];
-            foreach ($search as $k=>$v) {
+            foreach ($search as $k => $v) {
                 $p[] = "$k=$v";
             }
             $url .= implode("&", $p);
@@ -108,4 +108,3 @@ class OpenStates extends BaseAPI
         return $this->get($url, $fields);
     }
 }
-

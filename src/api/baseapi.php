@@ -170,13 +170,12 @@ abstract class BaseAPI
      *
      * @return null
      */
-    protected abstract function setClient($key);
+    abstract protected function setClient($key);
 
     /**
      * Get API Guzzle Client
      *
      * @return GuzzleHttp\Client API Client
      */
-    protected abstract function getClient();
-
+    abstract protected function getClient();
 }

@@ -95,7 +95,7 @@ class Sunlight
      * Get OpenStates API instance
      *
      * @param array $options OpenStates api options
-     * 
+     *
      * @return object          OpenStates api
      */
     public function openStates($options = [])
@@ -109,7 +109,7 @@ class Sunlight
      * Get Congress API instance
      *
      * @param array $options Congress api options
-     * 
+     *
      * @return object          Congress api
      */
     public function congress($options = [])

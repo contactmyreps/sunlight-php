@@ -83,7 +83,7 @@ class Congress extends BaseAPI
         $url = 'legislators?';
         if (count($search) > 0) {
             $p = [];
-            foreach ($search as $k=>$v) {
+            foreach ($search as $k => $v) {
                 $p[] = "$k=$v";
             }
             $url .= implode("&", $p);
@@ -97,7 +97,7 @@ class Congress extends BaseAPI
      *
      * @param int   $zip    zip code
      * @param array $fields display fields
-     * 
+     *
      * @return Response         API Response
      */
     public function locateByZip($zip, $fields = [])
@@ -112,7 +112,7 @@ class Congress extends BaseAPI
      * @param float $lat    latitude
      * @param float $lng    longitude
      * @param array $fields display fields
-     * 
+     *
      * @return Response         API Response
      */
     public function locateByGeo($lat, $lng, $fields = [])
@@ -121,4 +121,3 @@ class Congress extends BaseAPI
         return $this->get($url, $fields);
     }
 }
-
