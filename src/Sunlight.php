@@ -72,7 +72,7 @@ class Sunlight
         }
 
         if (null === $value) {
-            return $this->options[$key] ?? null;
+            return $this->options[$key] ? $this->options[$key] : null;
         }
 
         $this->options[$key] = $value;
