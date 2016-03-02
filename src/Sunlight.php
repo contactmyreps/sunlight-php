@@ -13,8 +13,6 @@
 
 namespace ContactMyReps\Sunlight;
 
-use ContactMyReps\Sunlight\api\openstates as OpenStates;
-
 /**
 * Sunlight Foundation API wrapper
 * For more information see http://sunlightfoundation.com/api
@@ -102,7 +100,7 @@ class Sunlight
     {
         $options = array_merge($this->options, $options);
 
-        return $this->get('ContactMyReps\\Sunlight\\API\\OpenStates', $options);
+        return $this->get('\\ContactMyReps\\Sunlight\\API\\OpenStates', $options);
     }
 
     /**
@@ -116,6 +114,6 @@ class Sunlight
     {
         $options = array_merge($this->options, $options);
 
-        return $this->get('ContactMyReps\\Sunlight\\API\\Congress', $options);
+        return $this->get('\\ContactMyReps\\Sunlight\\API\\Congress', $options);
     }
 }
