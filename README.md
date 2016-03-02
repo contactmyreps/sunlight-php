@@ -8,8 +8,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
+A limited PHP wrapper for the Sunlight Foundation APIs designed for use on contactmyreps.org
 
 ## Install
 
@@ -22,8 +21,26 @@ $ composer require contactmyreps/sunlight-php
 ## Usage
 
 ``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
+$sunlight = new Sunlight('695e61a2595a4f5aa9122ee4225c8247');
+$openStates = $sunlight->openStates();
+$congress = $sunlight->congress();
+
+//get all Alabama's state legislators
+$states->legislators(
+    [
+        'state' => 'AL'
+    ],
+);
+
+//get all State reps serving a gps coordinate
+$states->geoLookup($lat, $lng);
+
+//get all Congressional representatives serving an area
+$congress->locateByZip(11111);
+$congress->locateByGeo($lat, $lng);
+
+$request methods can be passed an optional extra array argument of display fields to return (last_name, first_name, etc.)
+
 ```
 
 ## Change log

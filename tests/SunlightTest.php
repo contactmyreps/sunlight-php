@@ -30,7 +30,7 @@ class SunlightTest extends \PHPUnit_Framework_TestCase
 		$this->assertInstanceOf('\\ContactMyReps\\Sunlight\\API\\OpenStates', $this->states);
     }
 
-/*    public function testOpenStatesGetSyncJson()
+    public function testOpenStatesGetSyncJson()
     {
     	$this->states->option(['async' => false, 'json' => true]);
     	$data = $this->states->legislators(
@@ -74,7 +74,7 @@ class SunlightTest extends \PHPUnit_Framework_TestCase
     		}
     	);
     	$request->wait();
-    }*/
+    }
 
     public function testCongressGetSyncArray()
     {
