@@ -28,7 +28,7 @@ use ContactMyReps\Sunlight\api\openstates as OpenStates;
 class Sunlight
 {
 
-    private static $_key = null;
+    private static $key = null;
 
     public $options = [
     'asnyc' => false,
@@ -44,13 +44,13 @@ class Sunlight
     public function __construct($key = null, $options = [])
     {
         if ($key === null) {
-            if (self::$_key === null) {
+            if (self::$key === null) {
                 $msg = 'No key provided, and none is globally set. ';
                 $msg .= 'Use Sunlight::setKey, or instantiate the Sunlight class with a $key parameter.';
                 throw new APIException($msg);
             }
         } else {
-            self::$_key = $key;
+            self::$key = $key;
         }
 
         $this->options = array_merge($this->options, $options);
@@ -88,7 +88,7 @@ class Sunlight
      */
     public function get($api, $options)
     {
-        return $api::getInstance(self::$_key, $options);
+        return $api::getInstance(self::$key, $options);
     }
 
     /**

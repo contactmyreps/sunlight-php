@@ -31,7 +31,7 @@ abstract class BaseAPI
 
     public $options = [];
 
-    private static $_instance;
+    private static $instance;
 
     /**
      * Create api
@@ -137,11 +137,11 @@ abstract class BaseAPI
     public static function getInstance($key, $options)
     {
         $class = get_called_class();
-        if (!isset(self::$_instance[$class])) {
-            self::$_instance[$class] = new static($options);
-            self::$_instance[$class]->setClient($key);
+        if (!isset(self::$instance[$class])) {
+            self::$instance[$class] = new static($options);
+            self::$instance[$class]->setClient($key);
         }
-        return self::$_instance[$class];
+        return self::$instance[$class];
     }
 
     /**
