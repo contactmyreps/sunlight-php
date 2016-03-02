@@ -21,7 +21,7 @@ $ composer require contactmyreps/sunlight-php
 ## Usage
 
 ``` php
-$sunlight = new Sunlight('695e61a2595a4f5aa9122ee4225c8247');
+$sunlight = new Sunlight($apikey);
 $openStates = $sunlight->openStates();
 $congress = $sunlight->congress();
 
