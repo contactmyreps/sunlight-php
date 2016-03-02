@@ -13,7 +13,7 @@
 
 namespace ContactMyReps\Sunlight\API;
 
-use ContactMyReps\Sunlight\api\BaseAPI;
+use ContactMyReps\Sunlight\API\BaseAPI;
 use GuzzleHttp\Client;
 
 /**

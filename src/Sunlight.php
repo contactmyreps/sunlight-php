@@ -13,6 +13,8 @@
 
 namespace ContactMyReps\Sunlight;
 
+use ContactMyReps\Sunlight\API\OpenStates;
+
 /**
 * Sunlight Foundation API wrapper
 * For more information see http://sunlightfoundation.com/api

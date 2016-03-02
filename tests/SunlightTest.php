@@ -35,7 +35,7 @@ class SunlightTest extends \PHPUnit_Framework_TestCase
     	$this->states->option(['async' => false, 'json' => true]);
     	$data = $this->states->legislators(
             [
-                'state' => $this->faker->stateAbbr(),
+                'state' => 'AL',
                 'district' => 1
             ],
             [
@@ -52,7 +52,7 @@ class SunlightTest extends \PHPUnit_Framework_TestCase
         $this->states->option(['async' => false, 'json' => false]);
         $data = $this->states->legislators(
             [
-                'state' => $this->faker->stateAbbr(),
+                'state' => 'AL',
                 'district' => 1
             ],
             [
