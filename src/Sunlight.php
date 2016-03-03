@@ -102,7 +102,7 @@ class Sunlight
     {
         $options = array_merge($this->options, $options);
 
-        return $this->get('\\ContactMyReps\\Sunlight\\API\\OpenStates', $options);
+        return $this->get('\\ContactMyReps\\Sunlight\\api\\OpenStates', $options);
     }
 
     /**
@@ -116,6 +116,6 @@ class Sunlight
     {
         $options = array_merge($this->options, $options);
 
-        return $this->get('\\ContactMyReps\\Sunlight\\API\\Congress', $options);
+        return $this->get('\\ContactMyReps\\Sunlight\\api\\Congress', $options);
     }
 }

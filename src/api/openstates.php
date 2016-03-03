@@ -11,9 +11,9 @@
  * @link     https://github.com/contactmyreps/sunlight-php
  */
 
-namespace ContactMyReps\Sunlight\API;
+namespace ContactMyReps\Sunlight\api;
 
-use ContactMyReps\Sunlight\API\BaseAPI;
+use ContactMyReps\Sunlight\api\BaseAPI;
 use GuzzleHttp\Client;
 
 /**
